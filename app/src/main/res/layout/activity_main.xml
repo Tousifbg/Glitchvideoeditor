@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMain.ActivityMain">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:gravity="center">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="videocutter">
+
+                        <ImageView
+                            android:id="@+id/ic_cutter"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/vid_cutter" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ic_cutter"
+                            android:fontFamily="@font/comfortaa"
+                            android:gravity="center"
+                            android:text="Video Cutter"
+                            android:textColor="#ffff"
+                            android:textSize="12sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="videotomp3">
+
+
+                        <ImageView
+                            android:id="@+id/ic_vid2audio"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/vid_to_audio" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ic_vid2audio"
+                            android:fontFamily="@font/comfortaa"
+                            android:gravity="center"
+                            android:text="Video to Audio"
+                            android:textColor="#ffff"
+                            android:textSize="12sp" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:onClick="videoreverse">
+
+
+                    <ImageView
+                        android:id="@+id/ic_vidReverse"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vid_reverse" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ic_vidReverse"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center"
+                        android:text="Video Reverse"
+                        android:textColor="#ffff"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="videorotate">
+
+                    <ImageView
+                        android:id="@+id/ic_rotate"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vid_crop" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ic_rotate"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center"
+                        android:text="Video Rotate"
+                        android:textColor="#ffff"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:onClick="videojoin">
+
+
+                    <ImageView
+                        android:id="@+id/ic_vidJoiner"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vid_joinner" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ic_vidJoiner"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center"
+                        android:text="Video Joiner"
+                        android:textColor="#ffff"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="videomirror">
+
+
+                    <ImageView
+                        android:id="@+id/ic_vidmirror"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vid_mirror" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ic_vidmirror"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center"
+                        android:text="Video Mirror"
+                        android:textColor="#ffff"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="videomute">
+
+                    <ImageView
+                        android:id="@+id/ic_mute"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vid_mute" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ic_mute"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center"
+                        android:text="Video Mute"
+                        android:textColor="#ffff"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="audiovideomixer">
+
+
+                    <ImageView
+                        android:id="@+id/changeMusic"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/vid_mixer" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/changeMusic"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center"
+                        android:text="Audio Changer"
+                        android:textColor="#ffff"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="phototovideo">
+
+
+                    <ImageView
+                        android:id="@+id/slideshow"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/slideshow_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/slideshow"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center"
+                        android:text="Slideshow Maker"
+                        android:textColor="#ffff"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="slowmotion">
+
+                    <ImageView
+                        android:id="@+id/slowMo"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/slowmo_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/slowMo"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center"
+                        android:text="Slow-Motion"
+                        android:textColor="#ffff"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="fastmotion">
+
+
+                    <ImageView
+                        android:id="@+id/fastmo"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/fastmo_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fastmo"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center"
+                        android:text="Fast-Motion"
+                        android:textColor="#ffff"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="audiojoiner">
+
+
+                    <ImageView
+                        android:id="@+id/audioJoiner"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/audiojoin" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/audioJoiner"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center"
+                        android:text="Audio Joiner"
+                        android:textColor="#ffff"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_id_admob"></com.google.android.gms.ads.AdView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/samplelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
